@@ -16,7 +16,7 @@ services:
     healthCheckPath: /health
     envVars:
       - key: APP_NAME
-        value: Notes API
+        value: NoteStack
       - key: ENVIRONMENT
         value: production
       - key: DEBUG

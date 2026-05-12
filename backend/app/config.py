@@ -13,7 +13,7 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    app_name: str = "Notes API"
+    app_name: str = "NoteStack"
     environment: str = "development"
     debug: bool = True
 
