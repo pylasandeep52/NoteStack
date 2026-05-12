@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notes — Sign in</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <h1 class="brand">Notes</h1>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="login" type="button">Sign in</button>
+      <button class="tab" data-tab="register" type="button">Create account</button>
+    </div>
+
+    <form id="login-form" class="auth-form">
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" required autocomplete="current-password" />
+      </label>
+      <button type="submit" class="btn-primary">Sign in</button>
+    </form>
+
+    <form id="register-form" class="auth-form hidden">
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>
+        Password (min 8 characters)
+        <input type="password" name="password" minlength="8" required autocomplete="new-password" />
+      </label>
+      <button type="submit" class="btn-primary">Create account</button>
+    </form>
+
+    <p id="error-message" class="error hidden"></p>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
