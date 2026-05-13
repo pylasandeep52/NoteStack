@@ -130,7 +130,7 @@ notes_app/
 ├── render.yaml                    Render Blueprint (web service + managed Postgres)
 ├── .dockerignore
 ├── .gitignore
-└── README.md                      You are here
+└── README.md                      
 ```
 
 ---
@@ -146,7 +146,7 @@ notes_app/
 ### 1. Clone and create a virtual environment
 
 ```powershell
-git clone https://github.com/<your-username>/notes-app.git
+git clone https://github.com/pylasandeep52/NoteStack.git
 cd notes-app
 python -m venv np_venv
 np_venv\Scripts\activate
