@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NoteStack</title>
+  <script>
+    // Redirect before any pixel paints if the user isn't signed in.
+    if (!localStorage.getItem("access_token")) {
+      window.location.replace("/login.html");
+    }
+  </script>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
